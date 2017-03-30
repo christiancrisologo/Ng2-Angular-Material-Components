@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<md-sidenav-container class="main-container">
+		<md-sidenav #sidenav class="left-sidenav">
+			<md-list>
+				<md-list-item>Item 1</md-list-item>
+				<md-list-item>Item 2</md-list-item>
+				<md-list-item>Item 3</md-list-item>
+			</md-list>
+		</md-sidenav>
+
+		<div class="sidenav-content">
+
+			<button md-mini-fab class="fab-button" (click)="sidenav.toggle()">
+      <md-icon>add</md-icon>
+    </button>
+
+
+			<!-- main container -->
+			<div class="main-content">
+
+			</div>
+
+		</div>
+
+	</md-sidenav-container>
+
+
+</div>
